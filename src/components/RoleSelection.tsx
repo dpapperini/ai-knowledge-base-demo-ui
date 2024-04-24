@@ -20,7 +20,7 @@ export const RoleSelection: React.FC<{
     }}>
     <Grid>
       <Typography>
-        Hello! Welcome to the AI Knowledge Base. Here you can learn all about Focused Labs.
+        Hello! Welcome to the AI Knowledge Base. Here you can learn all about This Is Hello.
       </Typography>
       <Grid container direction="row" marginTop="1.5rem">
         <Typography>Before we start, what is</Typography>
