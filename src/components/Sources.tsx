@@ -10,7 +10,7 @@ import { Source } from '../types/Source';
 export const Sources: React.FC<{
   chat: IChat;
 }> = ({ chat }) => {
-  const filteredSources = (sources: Source[]) => _.uniqBy(sources, 'URL');
+  const filteredSources = (sources: Source[]) => _.uniqBy(sources, 'location.s3Location.uri');
 
   const isScreenBiggerThan600 = useMediaQuery('(min-width:600px)');
 
@@ -51,8 +51,8 @@ export const Sources: React.FC<{
         <Link
           data-testid="sources"
           target="_blank"
-          key={source.URL}
-          href={source.URL}
+          key={source.location?.s3Location?.uri}
+          href={source.location?.s3Location?.uri}
           sx={{
             height: '2.125rem',
             display: 'flex',
@@ -110,7 +110,7 @@ export const Sources: React.FC<{
               width: `calc(100% - 30px)`
             }}>
             {' '}
-            {`${source?.title || source?.URL}`}
+            {`${source?.title || source?.location?.s3Location?.uri || source?.score}`}
           </Typography>
           <SvgIcon sx={{ margin: '.25rem' }}>
             <svg
