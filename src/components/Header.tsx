@@ -18,7 +18,7 @@ export const Header = () => (
       <Box
         display="flex"
         flexGrow={1}
-        onClick={() => window.open('https://focusedlabs.io/ai', '_blank')}>
+        onClick={() => window.open('https://thisishello.com/it', '_blank')}>
         <IconButton style={{ backgroundColor: 'transparent' }}>
           <FocusedLabsLogo></FocusedLabsLogo>
         </IconButton>
@@ -26,17 +26,13 @@ export const Header = () => (
       <IconButton
         style={{ backgroundColor: 'transparent' }}
         sx={{ paddingRight: '1rem', color: 'black' }}
-        onClick={() =>
-          window.open('https://www.linkedin.com/company/build-focused-labs/', '_blank')
-        }>
+        onClick={() => window.open('https://www.linkedin.com/company/thisishello/', '_blank')}>
         <LinkedInIcon></LinkedInIcon>
       </IconButton>
       <IconButton
         style={{ backgroundColor: 'transparent' }}
         sx={{ color: 'black' }}
-        onClick={() =>
-          window.open('https://github.com/focused-labs/knowledge-base-demo', '_blank')
-        }>
+        onClick={() => window.open('https://github.com/thisishello/knowledge-base-demo', '_blank')}>
         <GitHubIcon></GitHubIcon>
       </IconButton>
     </Toolbar>
