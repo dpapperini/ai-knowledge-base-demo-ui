@@ -24,8 +24,8 @@ export const IdeasForYou: React.FC<{
         <Typography>
           Great! You’ve selected<span style={{ fontWeight: 700 }}>&nbsp;{persona.label}</span>. You
           can change your role by refreshing the page. I have access to a vast amount of data on
-          Focused Labs, including case studies, services, and even conversations with our CEO. You
-          can ask me a question in the prompt bar, or try one of our prompt ideas below.
+          Hello, including case studies, services, and even conversations with our CEO. You can ask
+          me a question in the prompt bar, or try one of our prompt ideas below.
         </Typography>
       </Grid>
       <Typography fontWeight="700" marginTop="1.5rem">
