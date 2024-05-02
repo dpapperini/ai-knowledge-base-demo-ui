@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Card, CardMedia, Fab, Grid, Modal, SvgIcon, Typography } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
+// import { Card, CardMedia, Fab, Grid, Modal, SvgIcon, Typography } from '@mui/material';
+// import CloseIcon from '@mui/icons-material/Close';
+import { Card, Grid, SvgIcon, Typography } from '@mui/material';
 import { QueryForm } from './components/QueryForm';
 import { sendDeleteSession, sendQuery } from './services/ApiService';
 import { SubHeader } from './components/SubHeader';
@@ -14,7 +15,7 @@ import { ClearChatButton } from './components/ClearChatButton';
 import { Header } from './components/Header';
 import { ReactComponent as RoleIcon } from './images/Role.svg';
 // @ts-ignore
-import infoVideo from './images/kb-overview.mp4';
+// import infoVideo from './images/kb-overview.mp4';
 
 const App = () => {
   const [persona, setPersona] = useState<IPersona>(personas.ANY_ROLE);
@@ -22,8 +23,8 @@ const App = () => {
   const [inputQuery, setInputQuery] = useState('');
   const [loading, setLoading] = useState(false);
   const [conversation, setConversation] = useState<Array<IChat>>([]);
-  const [infoOpen, setInfoOpen] = useState(true);
-  const handleInfoClose = () => setInfoOpen(false);
+  // const [infoOpen, setInfoOpen] = useState(true);
+  // const handleInfoClose = () => setInfoOpen(false);
 
   const handleQuery = (question: string) => {
     setConversation(
@@ -102,7 +103,7 @@ const App = () => {
 
   return (
     <>
-      <Modal
+      {/* <Modal
         open={infoOpen}
         disableAutoFocus
         onClose={handleInfoClose}
@@ -137,7 +138,7 @@ const App = () => {
             onEnded={() => handleInfoClose()}
             sx={{ objectFit: 'contain', border: 'none' }}></CardMedia>
         </Card>
-      </Modal>
+      </Modal> */}
       <Header />
       <Grid
         container
