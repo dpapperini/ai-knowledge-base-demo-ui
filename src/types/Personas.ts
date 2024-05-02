@@ -3,9 +3,9 @@ export const personas: Record<string, IPersona> = {
     label: 'Any Role',
     value: 'human',
     promptIdeas: [
-      'What companies has Focused Labs worked with?',
-      'Tell me a brief history of Focused Labs',
-      'What are Focused Labs core values?'
+      'What companies has Hello worked with?',
+      'Tell me a brief history of Hello',
+      'What are Hello core values?'
     ]
   },
   POTENTIAL_EMPLOYEE: {
@@ -21,9 +21,9 @@ export const personas: Record<string, IPersona> = {
     label: 'Potential Customer',
     value: 'potential customer',
     promptIdeas: [
-      'What are Focused Labs rates?',
-      'What does Focused Labs process look like?',
-      "I have an idea but don't know where to start. How can Focused Labs help?"
+      'What are Hello rates?',
+      'What does Hello process look like?',
+      "I have an idea but don't know where to start. How can Hello help?"
     ]
   }
 };
