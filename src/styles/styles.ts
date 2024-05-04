@@ -1,17 +1,19 @@
 export const commonColors = {
-  purple600: '#4644B2',
-  purple400: '#8C92EF',
-  purple300: '#B6B6E6',
-  purple200: '#CECEF2',
-  purple100: '#E9E9F9',
-  purple50: '#F3F3FC',
-  orange: '#FF714C',
-  backgroundBlue: '#EDF3FF',
-  backgroundPurple: '#F3F3FC',
-  darkGray: '#7A7A7A',
-  lightGray: '#E4E4E4',
+  purple600: '#3c717e', //
+  purple400: '#60a4b0',
+  purple300: '#94c6cc', // on view buttons
+  purple200: '#c0dee1', // button button
+  purple100: '#ddeef0', // last button
+  purple50: '#f2f9f9',
+  orange: '#EF9447',
+  yellow: '#FED751',
+  green: '#75AA64',
+  backgroundBlue: '#448793',
+  backgroundPurple: '#7F5CC4',
+  darkGray: '#262626',
+  lightGray: '#D1E0E3',
   white: '#FFFFFF',
   black: '#000000',
   error: '#FDEDED',
-  errorText: '#5F2120'
+  errorText: '#E45F5D'
 };
