@@ -2,7 +2,7 @@ import { AppBar, Box, IconButton, Toolbar } from '@mui/material';
 import * as React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { ReactComponent as FocusedLabsLogo } from '../images/fl-logo.svg';
+import HelloLogo from '../images/hello-black.png';
 import { commonColors } from '../styles/styles';
 
 export const Header = () => (
@@ -20,7 +20,7 @@ export const Header = () => (
         flexGrow={1}
         onClick={() => window.open('https://thisishello.com/it', '_blank')}>
         <IconButton style={{ backgroundColor: 'transparent' }}>
-          <FocusedLabsLogo></FocusedLabsLogo>
+          <img src={HelloLogo} alt="logo hello" />
         </IconButton>
       </Box>
       <IconButton
