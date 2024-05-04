@@ -14,10 +14,12 @@ export const ClearChatButton: React.FC<{ deleteSession: () => void }> = ({ delet
       padding: '.5rem 1.375rem',
       fontSize: '1rem',
       '&:hover': {
-        backgroundColor: commonColors.purple100
+        backgroundColor: commonColors.purple100,
+        borderColor: commonColors.purple600
       },
       '&:active': {
-        backgroundColor: commonColors.purple200
+        backgroundColor: commonColors.purple200,
+        borderColor: commonColors.purple600
       }
     }}
     onClick={() => deleteSession()}>
